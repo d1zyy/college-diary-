@@ -12,7 +12,7 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 )
 
-var jwtKey = []byte("supersecretkey123")
+var jwtKey = []byte("VeRySeCrEtKey")
 
 func Home(c *gin.Context) {
 	user, exists := c.Get("user")
