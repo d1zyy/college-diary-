@@ -33,7 +33,6 @@ func RegisterPage(c *gin.Context) {
 	c.HTML(http.StatusOK, "index.html", gin.H{"Title": "Регистрация"})
 }
 
-// РЕГИСТРАЦИЯ
 func Register(c *gin.Context) {
 	email := c.PostForm("email")
 	password := c.PostForm("password")
@@ -71,7 +70,6 @@ func Register(c *gin.Context) {
 	c.Redirect(http.StatusFound, "/login")
 }
 
-// ВХОД
 func Login(c *gin.Context) {
 	email := c.PostForm("email")
 	password := c.PostForm("password")
